@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://psjnbhu2tahx"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xosvn"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.054902, 0.054902, 0.054902, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42puf"]
+bg_color = Color(0.443137, 0.643137, 0.643137, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adx1n"]
+bg_color = Color(0.709804, 0.541176, 0.654902, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ngyvp"]
+bg_color = Color(0.470588, 0.654902, 0.490196, 1)
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 440.0
+offset_top = 150.0
+offset_right = 640.0
+offset_bottom = 300.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xosvn")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 439.0
+offset_top = 46.0
+offset_right = 633.0
+offset_bottom = 136.0
+theme_override_font_sizes/font_size = 30
+text = "Следующаяя
+фигура:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 400.0
+offset_top = 360.0
+offset_right = 580.0
+offset_bottom = 405.0
+theme_override_font_sizes/font_size = 30
+text = "Счёт: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BestScoreLabel" type="Label" parent="."]
+offset_left = 439.0
+offset_top = 310.0
+offset_right = 756.0
+offset_bottom = 355.0
+theme_override_font_sizes/font_size = 30
+text = "Лучший результат: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameOverLabel" type="Label" parent="."]
+offset_left = 27.0
+offset_top = 293.0
+offset_right = 377.0
+offset_bottom = 351.0
+theme_override_font_sizes/font_size = 37
+text = "ИГРА ОКОНЧЕНА!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 446.0
+offset_top = 460.0
+offset_right = 626.0
+offset_bottom = 500.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_42puf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_adx1n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ngyvp")
+text = "NEW GAME"

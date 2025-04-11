@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://nflpgn0v7d61"]
+
+[ext_resource type="Script" path="res://сБРОС_ПРОГРЕССА.gd" id="1_lki2w"]
+[ext_resource type="Script" path="res://scenes/Button.gd" id="2_8sqmb"]
+
+[node name="сБРОС_ПРОГРЕССА" type="CanvasLayer"]
+script = ExtResource("1_lki2w")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 507.0
+offset_top = 331.0
+offset_right = 584.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 50
+text = "ДА"
+script = ExtResource("2_8sqmb")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 226.0
+offset_top = 218.0
+offset_right = 573.0
+offset_bottom = 290.0
+theme_override_font_sizes/font_size = 50
+text = "ВЫ УВЕРЕНЫ?"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 207.0
+offset_top = 331.0
+offset_right = 309.0
+offset_bottom = 408.0
+theme_override_font_sizes/font_size = 50
+text = "НЕТ"
+script = ExtResource("2_8sqmb")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

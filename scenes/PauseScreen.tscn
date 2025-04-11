@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddmccgebvqw0h"]
+
+[ext_resource type="Texture2D" uid="uid://cn08k1tgb8s28" path="res://assets/play.png" id="1_jrlgx"]
+
+[node name="PauseScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 803.0
+offset_bottom = 704.0
+color = Color(0, 0, 0, 0.87451)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 153.0
+offset_right = 561.0
+offset_bottom = 288.0
+theme_override_font_sizes/font_size = 96
+text = "ПАУЗА"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 328.0
+offset_top = 318.0
+offset_right = 472.0
+offset_bottom = 462.0
+texture_normal = ExtResource("1_jrlgx")

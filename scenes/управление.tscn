@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0tpt3ej3w2j6"]
+
+[ext_resource type="Script" path="res://Управление.gd" id="1_mofrk"]
+
+[node name="Управление" type="CanvasLayer"]
+script = ExtResource("1_mofrk")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 284.0
+offset_top = 70.0
+offset_right = 491.0
+offset_bottom = 118.0
+theme_override_font_sizes/font_size = 31
+text = "УПРАВЛЕНИЕ"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 153.0
+offset_right = 587.0
+offset_bottom = 201.0
+theme_override_font_sizes/font_size = 31
+text = "поворот фигуры - стрелка вверх, w"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 203.0
+offset_right = 587.0
+offset_bottom = 251.0
+theme_override_font_sizes/font_size = 31
+text = "перемещение фигуры - стрелка вправо,
+влево, d, a"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 302.0
+offset_right = 668.0
+offset_bottom = 352.0
+theme_override_font_sizes/font_size = 31
+text = "ускоренное падение - стрелка вниз, s"
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 38.0
+offset_top = 356.0
+offset_right = 668.0
+offset_bottom = 406.0
+theme_override_font_sizes/font_size = 31
+text = "уронить фигуру - ctrl"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 318.0
+offset_top = 466.0
+offset_right = 495.0
+offset_bottom = 540.0
+theme_override_font_sizes/font_size = 35
+text = "НАЗАД"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
